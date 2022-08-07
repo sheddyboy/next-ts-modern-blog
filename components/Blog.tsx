@@ -124,7 +124,7 @@ const Blog = () => {
     searchArray: [],
     search: "",
     currentPage: 1,
-    postPerPage: 4,
+    postPerPage: 8,
     numOfPages: 0,
   });
 
