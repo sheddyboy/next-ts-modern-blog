@@ -1,0 +1,112 @@
+.slider {
+  position: relative;
+  height: 42em;
+  background-image: linear-gradient(
+    180deg,
+    hsla(0, 0%, 100%, 0) 58%,
+    rgba(0, 0, 0, 0.95)
+  );
+}
+
+.slide {
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding-right: 1.39em;
+  padding-bottom: 1.04em;
+  padding-left: 1.39em;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  border-radius: 0.28em;
+}
+
+.content {
+  width: 31.94em;
+  height: 550px;
+  padding-top: 13.33em;
+  margin-bottom: 3em;
+}
+
+.content h1 {
+  color: #fff;
+}
+
+.content :nth-child(1) {
+  display: inline;
+  margin-bottom: 0.28em;
+  color: #fff;
+  font-size: 1.11em;
+}
+.content :nth-child(3) {
+  margin-top: 0.83em;
+  margin-bottom: 2.78em;
+  color: #fff;
+  font-size: 1.25em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1em 3em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fff;
+  border-radius: 0.28em;
+}
+
+.lArror {
+  position: absolute;
+  width: 80px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  cursor: pointer;
+  overflow: hidden;
+  color: white;
+  font-size: 40px;
+  /* z-index: 3; */
+  right: auto;
+}
+
+.lArror div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 1em;
+  height: 1em;
+}
+
+.rArror {
+  position: absolute;
+  width: 80px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  cursor: pointer;
+  overflow: hidden;
+  color: white;
+  font-size: 40px;
+  /* z-index: 4; */
+  left: auto;
+}
+
+.rArror div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 1em;
+  height: 1em;
+}

@@ -1,0 +1,48 @@
+.blogFilter {
+  width: 100%;
+  margin-bottom: 3.13em;
+}
+
+.filters {
+  margin-bottom: 0px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.categories {
+  display: flex;
+  margin-right: 1.39em;
+  padding: 1em 1.74em;
+  align-items: center;
+  border-radius: 0.28em;
+  background-color: #000;
+  color: #fff;
+}
+
+.categories h4 {
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.cList {
+  display: flex;
+}
+
+.search {
+  display: flex;
+  margin-bottom: 0px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1.39em;
+  align-items: center;
+  flex: 1;
+  border: 1px solid #000;
+  border-radius: 0.28em;
+  font-family: Lato, sans-serif;
+  font-size: 1.74em;
+  font-weight: 400;
+  height: 38px;
+}

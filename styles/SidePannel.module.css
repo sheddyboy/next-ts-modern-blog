@@ -1,0 +1,123 @@
+.sidePannel {
+  /* grid-row-start: span 1;
+  grid-row-end: span 1;
+  grid-column-start: span 1;
+  grid-column-end: span 1; */
+  padding-bottom: 1em;
+}
+
+.form {
+  margin: 0 0 15px;
+  padding: 1.39em;
+  border-radius: 0.28em;
+  background-color: #d0dbff;
+}
+
+.aboutUs {
+  margin-top: 5.56em;
+  padding-right: 1.39em;
+  padding-left: 1.39em;
+}
+
+.aboutUs h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Lato, sans-serif;
+  font-size: 1.74em;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.aboutUs p {
+  margin-top: 0.83em;
+  margin-bottom: 0.97em;
+  font-size: 1.25em;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mostPopular {
+  margin-top: 5.56em;
+  padding-right: 1.39em;
+  padding-left: 1.39em;
+}
+
+.mostPopular h2 {
+  margin-bottom: 0.5em;
+  font-size: 1.74em;
+  line-height: 1.1;
+}
+
+.mostPopularContent h3 {
+  margin-top: 1.39em;
+  font-size: 1.39em;
+  text-transform: capitalize;
+}
+
+.h5 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Lato, sans-serif;
+  font-size: 1.74em;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.nameInput {
+  margin-top: 1.39em;
+  display: block;
+  width: 100%;
+  height: 38px;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333333;
+  /* vertical-align: middle; */
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+.emailInput {
+  display: block;
+  width: 100%;
+  height: 38px;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333333;
+  /* vertical-align: middle; */
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+.phoneInput {
+  display: block;
+  width: 100%;
+  height: 38px;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333333;
+  /* vertical-align: middle; */
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+.submitBtn {
+  width: 100%;
+  border-radius: 0.28em;
+  font-family: Lato, sans-serif;
+  font-size: 1.39em;
+  display: inline-block;
+  padding: 9px 15px;
+  background-color: #3898ec;
+  color: white;
+  border: 0;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}

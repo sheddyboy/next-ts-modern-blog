@@ -1,0 +1,15 @@
+.section {
+  padding-top: 1.94em;
+  padding-bottom: 1.94em;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLink {
+  margin-left: 4.44em;
+  font-size: 1.11em;
+}

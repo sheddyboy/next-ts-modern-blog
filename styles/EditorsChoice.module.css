@@ -1,0 +1,85 @@
+.section {
+  padding-bottom: 10.42em;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading h2 {
+  margin-bottom: 0.5em;
+  font-size: 1.74em;
+}
+
+.heading {
+  margin-bottom: 3.82em;
+}
+
+.gridBox {
+  display: grid;
+  /* float: none;
+  clear: none; */
+  grid-auto-columns: 1fr;
+  grid-column-gap: 1.11em;
+  grid-row-gap: 2.5em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.gridBoxItem {
+  height: 25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  border-radius: 0.28em;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 1px 1px 20px 0 rgb(0 0 0 / 40%);
+
+  /* grid-row-start: span 2;
+  grid-row-end: span 2;
+  grid-column-start: span 1;
+  grid-column-end: span 1; */
+}
+
+.gridBoxItem a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding-right: 1.39em;
+  padding-bottom: 1.04em;
+  padding-left: 1.39em;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  border-radius: 0.28em;
+  background-image: linear-gradient(
+    180deg,
+    hsla(0, 0%, 100%, 0) 58%,
+    rgba(0, 0, 0, 0.95)
+  );
+}
+
+.gridBoxItem h3 {
+  color: #fff;
+  font-size: 1.74em;
+}
+
+.tag {
+  display: flex;
+  margin-bottom: 0.83em;
+  padding: 0.56em 1em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.28em;
+  background-color: #2471b9;
+  color: #fff;
+}
+
+.tag p {
+  display: inline-block;
+  font-size: 1.11em;
+}

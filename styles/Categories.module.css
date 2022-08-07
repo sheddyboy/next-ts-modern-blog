@@ -1,0 +1,20 @@
+.cListItem {
+  margin-left: 2.5em;
+  padding: 0.56em 1.5em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #2471b9;
+  border-radius: 0.28em;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cListItem:hover {
+  background-color: #2471b9;
+}
+
+.active {
+  background-color: #2471b9;
+}
