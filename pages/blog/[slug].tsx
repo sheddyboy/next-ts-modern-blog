@@ -131,7 +131,7 @@ const BlogPage = () => {
           </div>
         </div>
       </section>
-      <section className={styles.relatedPosts}>
+      <section id="relatedPosts" className={styles.relatedPosts}>
         <div className="container">
           <div className={styles.postsContainer}>
             <h2>Related Posts</h2>

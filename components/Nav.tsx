@@ -28,6 +28,11 @@ const Nav = () => {
                 <a className={styles.navLink}>Editor&apos;s Choice</a>
               </Link>
             )}
+            {check && (
+              <Link href={"#relatedPosts"}>
+                <a className={styles.navLink}>Related Posts</a>
+              </Link>
+            )}
           </div>
         </div>
       </div>
