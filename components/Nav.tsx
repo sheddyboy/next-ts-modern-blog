@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 import styles from "../styles/Nav.module.css";
 
 const Nav = () => {
+  const router = useRouter();
+  const check = router.asPath.includes("/blog");
   return (
     <nav className={styles.section}>
       <div className="container">
@@ -15,12 +18,16 @@ const Nav = () => {
             <Link href={"/"}>
               <a className={styles.navLink}>Home</a>
             </Link>
-            <Link href={"#blogScetion"}>
-              <a className={styles.navLink}>Blog</a>
-            </Link>
-            <Link href={"#editorsChoiceSection"}>
-              <a className={styles.navLink}>Editor&apos;s Choice</a>
-            </Link>
+            {!check && (
+              <Link href={"#blogScetion"}>
+                <a className={styles.navLink}>Blog</a>
+              </Link>
+            )}
+            {!check && (
+              <Link href={"#editorsChoiceSection"}>
+                <a className={styles.navLink}>Editor&apos;s Choice</a>
+              </Link>
+            )}
           </div>
         </div>
       </div>
