@@ -15,8 +15,12 @@ const Nav = () => {
             <Link href={"/"}>
               <a className={styles.navLink}>Home</a>
             </Link>
-            <a className={styles.navLink}>Blog</a>
-            <a className={styles.navLink}>Editor&apos;s Choice</a>
+            <Link href={"#blogScetion"}>
+              <a className={styles.navLink}>Blog</a>
+            </Link>
+            <Link href={"#editorsChoiceSection"}>
+              <a className={styles.navLink}>Editor&apos;s Choice</a>
+            </Link>
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ const EditorsChoice = () => {
 
   return (
     <>
-      <section className={styles.section}>
+      <section id="editorsChoiceSection" className={styles.section}>
         <div className="container">
           <div className={styles.grid}>
             <div className={styles.heading}>

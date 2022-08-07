@@ -133,7 +133,7 @@ const Blog = () => {
   }, [postsCtx, stateCategory.currentPage]);
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="blogScetion">
       <div className="container">
         <div className={styles.grid}>
           <BlogFilter

@@ -4,6 +4,7 @@ import styles from "../styles/MainPannel.module.css";
 import { PostsType } from "../store/DataProvider";
 import { StateReducer, ActionReducer } from "./Blog";
 import { blogMouseEnter, blogMouseLeave } from "../animation";
+import { useRouter } from "next/router";
 
 type MainPannelType = {
   blogArray: PostsType | undefined;
@@ -17,6 +18,9 @@ const MainPannel = ({
   stateCategory,
 }: MainPannelType) => {
   const { currentPage, numOfPages } = stateCategory;
+
+  const router = useRouter();
+  console.log(router);
 
   return (
     <div className={styles.mainPannel}>
@@ -46,6 +50,7 @@ const MainPannel = ({
           <div
             className={styles.prev}
             onClick={() => {
+              router.push("#blogScetion");
               dispatchCategory({ type: "Previous" });
             }}
           >
@@ -56,6 +61,7 @@ const MainPannel = ({
           <div
             className={styles.next}
             onClick={() => {
+              router.push("#blogScetion");
               dispatchCategory({ type: "Next" });
             }}
           >
