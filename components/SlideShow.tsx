@@ -7,7 +7,6 @@ import { gsap } from "gsap";
 const SlideShow = () => {
   const [sildeCounter, setSlideCounter] = useState(0);
   const postCtx = useContext(PostsCtx);
-  console.log(postCtx);
 
   const item = postCtx[sildeCounter];
 
