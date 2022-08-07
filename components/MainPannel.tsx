@@ -20,7 +20,6 @@ const MainPannel = ({
   const { currentPage, numOfPages } = stateCategory;
 
   const router = useRouter();
-  console.log(router);
 
   return (
     <div className={styles.mainPannel}>
