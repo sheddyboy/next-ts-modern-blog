@@ -160,29 +160,29 @@ const DataProvider = ({ children }: Prop) => {
   const [category, setCategory] = useState(defaultCategory);
 
   useEffect(() => {
-    fetch("http://localhost:4000/posts")
-      .then((res) => res.json())
-      .then((data) => setPosts(data));
-    fetch("http://localhost:4000/authors")
-      .then((res) => res.json())
-      .then((data) => setAuthors(data));
-    fetch("http://localhost:4000/category")
-      .then((res) => res.json())
-      .then((data) => setCategory(data));
+    // fetch("http://localhost:4000/posts")
+    //   .then((res) => res.json())
+    //   .then((data) => setPosts(data));
+    // fetch("http://localhost:4000/authors")
+    //   .then((res) => res.json())
+    //   .then((data) => setAuthors(data));
+    // fetch("http://localhost:4000/category")
+    //   .then((res) => res.json())
+    //   .then((data) => setCategory(data));
 
-    // fetch("https://sheddy-blog-default-rtdb.firebaseio.com/posts.json")
-    //   .then((res) => res.json())
-    //   .then((data) => setPosts(data))
-    //   .catch((err) => console.log(err));
+    fetch("https://sheddy-blog-default-rtdb.firebaseio.com/posts.json")
+      .then((res) => res.json())
+      .then((data) => setPosts(data))
+      .catch((err) => console.log(err));
 
-    // fetch("https://sheddy-blog-default-rtdb.firebaseio.com/authors.json")
-    //   .then((res) => res.json())
-    //   .then((data) => setAuthors(data))
-    //   .catch((err) => console.log(err));
-    // fetch("https://sheddy-blog-default-rtdb.firebaseio.com/category.json")
-    //   .then((res) => res.json())
-    //   .then((data) => setCategory(data))
-    //   .catch((err) => console.log(err));
+    fetch("https://sheddy-blog-default-rtdb.firebaseio.com/authors.json")
+      .then((res) => res.json())
+      .then((data) => setAuthors(data))
+      .catch((err) => console.log(err));
+    fetch("https://sheddy-blog-default-rtdb.firebaseio.com/category.json")
+      .then((res) => res.json())
+      .then((data) => setCategory(data))
+      .catch((err) => console.log(err));
   }, []);
   return (
     <PostsCtx.Provider value={posts}>
