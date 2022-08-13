@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useContext } from "react";
+import React, { useContext, useMemo } from "react";
 import styles from "../styles/SidePannel.module.css";
 import { PostsCtx, PostsType } from "../store/DataProvider";
 import Image from "next/image";
@@ -12,7 +12,10 @@ const SidePannel = () => {
 
   const postCtx = useContext(PostsCtx);
 
-  const fourRandomPosts = getMultipleRandom(postCtx, 4);
+  const fourRandomPosts = useMemo(
+    () => getMultipleRandom(postCtx, 4),
+    [postCtx]
+  );
   return (
     <div className={styles.sidePannel}>
       <form className={styles.form}>
